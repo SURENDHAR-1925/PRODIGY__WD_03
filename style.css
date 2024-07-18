@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0BDA51;
+}
+
+.container {
+    text-align: center;
+    border-radius: 30px;
+    width: 30rem;
+    background-image: linear-gradient(to right,#7CFC00,#AAFF00);
+}
+
+.board {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 9px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 6rem;
+    height: 6rem;
+    background-color:transparent; 
+    border: 1px solid #478778;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cell:hover{
+    width: 6.3rem;
+    height: 6.3rem;
+    box-shadow: 0 2px 2px 2px #0BDA51;
+}
+
+button {
+    width: 9rem;
+    height: 3rem;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 15px;
+    background-color: transparent;
+}
+button:hover{
+    width: 9.3rem;
+    height: 3.3rem;
+    background-image: linear-gradient(to right,#4CBB17,#32CD32);
+}
+
+.status {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    width: 10rem;
+    height: 2rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    background-image: linear-gradient(to bottom right,#0BDA51, yellow);
+}
